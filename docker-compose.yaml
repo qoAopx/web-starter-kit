@@ -1,0 +1,10 @@
+version: '3'
+services:
+  wsk:
+    build: .
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    volumes:
+      - "./wsk:/usr/src/app"
+# docker run --rm -p 3000:3000 -p 3001:3001 -v "$(pwd)":/usr/src/app 3710c1745406      
