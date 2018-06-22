@@ -6,5 +6,6 @@ services:
       - "3000:3000"
       - "3001:3001"
     volumes:
-      - "./wsk:/usr/src/app"
+      - "./web-starter-kit/:/web-starter-kit/"
+    command: "/entrypoint.sh"
 # docker run --rm -p 3000:3000 -p 3001:3001 -v "$(pwd)":/usr/src/app 3710c1745406      
